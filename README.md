@@ -25,4 +25,27 @@ The challenge provides the following as starting points:
 
 ## Results
 
-*coming soon*
+![image of the produced table](./table.png)
+
+Pretty easy overall. However, reading through the *Hints and tips* once I thought I was done - to check if I had missed anything revealed:
+
+> One way of associating headers with their rows/columns is a lot easier than the other way.
+
+Having no idea what was being referenced I inspected the example source code revealing two interesting features -
+
+1. While I was quite happy with my use of css pseudo-classes to efficiently target the name column and style its border, a `<colgroup>` would have been even more so -
+    ```html
+    <table>
+        <caption>...</caption>
+        <colgroup>
+            <col span="2">
+            <col style="border: 2px solid black;">
+            <col span="9">
+        </colgroup>
+        ...
+    </table>
+    ```
+2. While some elements are unnecessary for the visual formatting of a table their inclusion is best practice to increase accessibility for those who rely on screen readers. This applies to `<thead>` and `<tbody>` elements and the inclusion of a `scope` property if using a `<th>` as a row heading -
+    ```html
+    <th scope="row">Row Heading</th>
+    ```
