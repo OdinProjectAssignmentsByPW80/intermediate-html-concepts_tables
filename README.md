@@ -19,8 +19,9 @@ The challenge provides the following as starting points:
 - [minimal-table.css &rArr;](https://github.com/mdn/learning-area/blob/main/html/tables/assessment-start/minimal-table.css)
 - [planets-data.txt &rArr;](https://github.com/mdn/learning-area/blob/main/html/tables/assessment-start/planets-data.txt)
 
-> [!NOTE]
-> The challenge includes a seven step process to follow to completion. As per usual, I will ignore it.
+> [!NOTE]NOTES
+> - The challenge includes a seven step process to follow to completion. As per usual, I will ignore it.
+> - `planets-data.txt` has been rendered [locally](./planets-data.md) using markdown for better readability.
 
 ## Results
 
