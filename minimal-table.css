@@ -34,3 +34,16 @@ tr:nth-child(odd) td {
 caption {
   padding: 10px;
 }
+
+.name-col {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+tr:first-of-type .name-col {
+  border-top: 2px solid black;
+}
+
+tr:last-of-type .name-col {
+  border-bottom: 2px solid black;
+}
